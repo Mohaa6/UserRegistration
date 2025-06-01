@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automated Job Search Information System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #e74c3c;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #c0392b;
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav li {
+            margin: 0 15px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .hero {
+            background-color: #f9f9f9;
+            padding: 40px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .registration-form {
+            background-color: #f5f5f5;
+            padding: 30px;
+            border-radius: 5px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .form-row {
+            display: flex;
+            gap: 20px;
+        }
+        .form-col {
+            flex: 1;
+        }
+        button {
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        button:hover {
+            background-color: #c0392b;
+        }
+        .required {
+            color: #e74c3c;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>AUTOMATED JOB SEARCH INFORMATION SYSTEM</h1>
+        <p>Employment Department, Government of Tamil Nadu</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Job Listings</a></li>
+            <li><a href="#">Career Guidance</a></li>
+            <li><a href="#">Training Programs</a></li>
+            <li><a href="#">News & Events</a></li>
+            <li><a href="#">F.A.Q</a></li>
+            <li><a href="#">Contact us</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section class="hero">
+            <h2>Your dream job is waiting!</h2>
+            <p>The right opportunity could be just one click away. Let us help you find the perfect match for your skills and experience.</p>
+        </section>
+
+        <section class="registration-form">
+            <h2>:: Job Seeker Registration</h2>
+            
+            <form>
+                <div class="form-row">
+                    <div class="form-col">
+                        <div class="form-group">
+                            <label for="name">Full Name <span class="required">*</span></label>
+                            <input type="text" id="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="gender">Gender <span class="required">*</span></label>
+                            <select id="gender" required>
+                                <option value="">Select</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="dob">Date of Birth <span class="required">*</span></label>
+                            <input type="date" id="dob" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-col">
+                        <div class="form-group">
+                            <label for="education">Highest Education <span class="required">*</span></label>
+                            <select id="education" required>
+                                <option value="">Select</option>
+                                <option value="highschool">High School</option>
+                                <option value="diploma">Diploma</option>
+                                <option value="bachelor">Bachelor's Degree</option>
+                                <option value="master">Master's Degree</option>
+                                <option value="phd">PhD</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="experience">Years of Experience <span class="required">*</span></label>
+                            <select id="experience" required>
+                                <option value="">Select</option>
+                                <option value="0">Fresher</option>
+                                <option value="1-3">1-3 years</option>
+                                <option value="4-6">4-6 years</option>
+                                <option value="7-10">7-10 years</option>
+                                <option value="10+">10+ years</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="skills">Key Skills <span class="required">*</span></label>
+                            <input type="text" id="skills" placeholder="Separate skills with commas" required>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="address">Present Address <span class="required">*</span></label>
+                    <textarea id="address" rows="3" required></textarea>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-col">
+                        <div class="form-group">
+                            <label for="district">District <span class="required">*</span></label>
+                            <select id="district" required>
+                                <option value="">Select</option>
+                                <option value="chennai">Chennai</option>
+                                <option value="coimbatore">Coimbatore</option>
+                                <option value="madurai">Madurai</option>
+                                <option value="tiruchirapalli">Tiruchirapalli</option>
+                                <option value="salem">Salem</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-col">
+                        <div class="form-group">
+                            <label for="pincode">Pincode</label>
+                            <input type="text" id="pincode">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-col">
+                        <div class="form-group">
+                            <label for="mobile">Mobile Number <span class="required">*</span></label>
+                            <input type="tel" id="mobile" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-col">
+                        <div class="form-group">
+                            <label for="email">Email <span class="required">*</span></label>
+                            <input type="email" id="email" required>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="jobtype">Preferred Job Type <span class="required">*</span></label>
+                    <select id="jobtype" required>
+                        <option value="">Select</option>
+                        <option value="fulltime">Full-time</option>
+                        <option value="parttime">Part-time</option>
+                        <option value="contract">Contract</option>
+                        <option value="internship">Internship</option>
+                        <option value="remote">Remote</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="industry">Preferred Industry</label>
+                    <select id="industry">
+                        <option value="">Any Industry</option>
+                        <option value="it">Information Technology</option>
+                        <option value="healthcare">Healthcare</option>
+                        <option value="finance">Finance</option>
+                        <option value="education">Education</option>
+                        <option value="manufacturing">Manufacturing</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="resume">Upload Resume (PDF/DOC) <span class="required">*</span></label>
+                    <input type="file" id="resume" accept=".pdf,.doc,.docx" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="declaration">
+                        <input type="checkbox" id="declaration" required>
+                        I hereby declare that all the information provided is true and accurate to the best of my knowledge.
+                    </label>
+                </div>
+                
+                <button type="submit">Register Job Seeker</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
